@@ -10,12 +10,24 @@
  */
 public class Trigonometricas {
   
-    import static java.lang.Math.sin;
-    import static java.lang.Math.cos;
-    import static java.lang.Math.tan;
-    
-    java.lang.Math.sin(double a);
-    
+     int menuPrincipal(){
+        
+        System.out.println("Seleccione una opción:" );
+        System.out.println("1. seno");
+        System.out.println("2. coseno");
+        System.out.println("3. Tangente");
+        System.out.println("4. secante");
+        System.out.println("5. cosecante");
+        System.out.println("6. cotangente");
+        int opcion;
+        do{
+            System.out.println("Por favor ingrese una opción:");
+            opcion=calculadora.nextInt();
+            
+        }while(opcion<1 || opcion >6);
+        
+        return opcion;
+}
     
     double a;
     double respuesta;
@@ -44,4 +56,10 @@ public class Trigonometricas {
     respuesta = 1/Math.tan (a);
     return respuesta;
      }
+ 
+    
+
+
+
+
 }
