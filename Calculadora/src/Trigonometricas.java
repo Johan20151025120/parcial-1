@@ -10,20 +10,38 @@
  */
 public class Trigonometricas {
   
-    import static java.lang.Math.cos;
     import static java.lang.Math.sin;
+    import static java.lang.Math.cos;
     import static java.lang.Math.tan;
+    
+    java.lang.Math.sin(double a);
     
     
     double a;
     double respuesta;
     
-    Calculadora miCalculadora=new Calculadora(); 
-    public static double sin(double a) {
-        
-        return respuesta;
-    }
-    
-    
-  
+    double Seno () {
+    respuesta = Math.sin (a);
+    return respuesta;
+     }
+    double coseno () {
+    respuesta = Math.cos (a);
+    return respuesta;
+     }
+    double Tangente () {
+    respuesta = Math.tan (a);
+    return respuesta;
+     }
+    double Secante () {
+    respuesta = 1/Math.sin (a);
+    return respuesta;
+     }
+    double Cosecante () {
+    respuesta = 1/Math.cos (a);
+    return respuesta;
+     }
+    double Cotangente () {
+    respuesta = 1/Math.tan (a);
+    return respuesta;
+     }
 }
